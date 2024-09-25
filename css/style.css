@@ -277,20 +277,45 @@ footer {
 @media (max-width: 576px) {
   /* Hero */
   #hero {
-    height: 100vh;
+    height: 600px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: center; /* Align content vertically */
+    justify-content: center; /* Align content horizontally */
+    position: relative; /* Make sure elements position correctly inside */
+    align-items: center; /* Untuk mengatur horizontal di tengah */
+    text-align: center; /* Supaya semua teks terpusat */
+  }
+
+  #hero img {
+      position: absolute;
+      top: 50px; /* Adjust the image to be above the text */
+      left: 50%; /* Center the image horizontally */
+      transform: translateX(-50%); /* Center the image perfectly */
+      width: 40%; /* Adjust the image width */
+      margin-top: 25px;
+  }
+
+  #hero .icons {
+    margin-bottom: 50px;
+    height: 5px;
   }
 
   #hero h1 {
     font-size: 24px;
+    text-align: center;
+  }
+
+  #hero h2 {
+    text-align: center;
+    margin-top: 125px;
   }
 
   #hero p {
     font-size: 16px;
+    text-align: center;
+    font-size: larger;
   }
+
 
   /* Navbar */
   .navbar {
@@ -330,9 +355,17 @@ footer {
     padding-bottom: 20px;
   }
 
+  #skill p {
+    font-size: 10px;
+  }
+
+  .logoskill img {
+    height: 10px;
+  }
+
   .cards {
     margin-bottom: 20px;
-    width: 200px;
+    width: 100px;
   }
 
   /* Sertifikat */
