@@ -1,0 +1,452 @@
+:root {
+  --mainColor: #255855;
+  --secondaryColor: #90AEAD;
+  --navbarColor: #E64833;
+  --buttonColor: #FBE9D0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--mainColor);
+  min-height: 900px;
+  font-family: 'poppins', sans-serif;
+}
+
+/* Style Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  transition: background-color 1s ease;
+}
+
+.nav-link.active {
+  color: var(--navbarColor) !important;
+  font-weight: 700;
+}
+
+.navbar.scrolled {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+
+
+
+/* Hero */
+#hero {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: var(--buttonColor);
+  text-align: center;
+  color: #E64833;
+  font-weight: 700;
+  border: none;
+}
+
+.btn-primary:hover {
+  color: var(--navbarColor);
+  background-color: var(--secondaryColor) !important;
+  text-decoration: none;
+  }
+
+.cv {
+  color: #fff;
+}
+
+.dwn {
+  color: var(--navbarColor);
+}
+
+.navbar-nav a {
+  white-space: nowrap;
+}
+
+.icons {
+  margin-bottom: 45px;
+}
+
+/* About */
+
+hr {
+  height: 5px;
+  color: var(--mainColor);
+  margin: 0 auto;
+  opacity: 100%s;
+}
+
+#about {
+  width: 100%;
+  background-color: var(--secondaryColor);
+  color: #fff;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.deskripsi {
+  padding-top: 20px;
+  color: var(--mainColor);
+  font-size: larger;
+}
+
+.desk {
+  font-weight: 800;
+}
+
+.tentang {
+  color: #255855;
+  font-weight: 800;
+}
+
+.iconstwo {
+  margin-top: 20px;
+}
+
+/* about */
+#skill {
+  background-color: var(--mainColor);
+}
+
+.skill-icon {
+  transition: transform 0.3s ease-in-out;
+}
+
+.skill-icon:hover {
+  transform: scale(1.2);
+}
+
+.cards {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  background-color: var(--buttonColor);
+  border-radius: 8px;
+  padding: 0px;
+}
+
+.cards img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.cards:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.sekil {
+  font-weight: bold;
+  color: #255855;
+}
+
+.card-body p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #343a40;
+}
+
+.gambar img {
+  width: 6%;
+  margin: 40px;
+}
+
+
+.sekil {
+  color: var(--secondaryColor);
+  font-weight: 800;
+}
+
+.section1 {
+  height: 100vh;
+
+}
+
+.section2 {
+  height: 100vh;
+
+}
+
+
+/* Sertifikat */
+#sertif {
+  background: linear-gradient(to bottom, #90AEAD, #255855);
+  /* Gradasi dari ungu ke biru */
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+
+.galeri-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 15px;
+  height: 150px;
+}
+
+.galeri-item:hover {
+  transform: scale(1.03);
+}
+
+.galeri-item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.galeri-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.sertif h1 {
+  text-align: center;
+  font-weight: 800;
+  color: var(--mainColor);
+}
+
+.card {
+  background-color: var(--secondaryColor);
+  padding: 0;
+  border: none;
+}
+
+.card p {
+  font-size: 12px;
+  text-align: justify;
+}
+
+.card h5 {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+footer {
+  background: var(--secondaryColor);
+}
+
+.trims h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--mainColor);
+}
+
+.dwn {
+  padding-left: 5px;
+}
+
+#iklan {
+  height: 100vh;
+  overflow: hidden;
+}
+
+#iklan h5 {
+  font-weight: 700;
+}
+
+.carousel-item {
+  height: 100vh;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  /* Ensure the image covers the entire area */
+  object-position: center;
+  /* Center the image within its container */
+}
+
+
+
+
+
+
+/* Responsive Design */
+
+/* Smartphone */
+@media (max-width: 576px) {
+  /* Hero */
+  #hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #hero h1 {
+    font-size: 24px;
+  }
+
+  #hero p {
+    font-size: 16px;
+  }
+
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  .navbar-nav a {
+    margin-bottom: 10px;
+  }
+
+  /* About */
+  #about {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  #about p {
+    text-align: justify !important;
+  }
+
+  .deskripsi {
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 15px;
+  }
+
+
+  /* Skill */
+  #skill {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .cards {
+    margin-bottom: 20px;
+    width: 200px;
+  }
+
+  /* Sertifikat */
+  #sertif {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .galeri-item {
+    width: 100%;
+    float: none;
+    margin-bottom: 20px;
+  }
+  
+  .galeri-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  /* Carousel */
+  #iklan {
+    height: 300px;
+    overflow: hidden;
+  }
+
+  .carousel-item {
+    height: 300px;
+  }
+
+  .carousel-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+}
+
+/* Tablet */
+@media (min-width: 577px) and (max-width: 992px) {
+  /* Hero */
+  #hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #hero h1 {
+    font-size: 36px;
+  }
+
+  #hero p {
+    font-size: 20px;
+  }
+
+  /* Navbar */
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+  }
+
+  .navbar-nav a {
+    margin-right: 20px;
+  }
+
+  /* About */
+  #about {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .deskripsi {
+    padding-top: 20px;
+  }
+
+  /* Skill */
+  #skill {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .cards {
+    margin-bottom: 20px;
+  }
+
+  /* Sertifikat */
+  #sertif {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .galeri-item {
+    margin-bottom: 10px;
+  }
+
+  /* Carousel */
+  #iklan {
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .carousel-item {
+    height: 100vh;
+  }
+
+  .carousel-item img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+}
