@@ -71,7 +71,14 @@ body {
 }
 
 .icons {
-  margin-bottom: 45px;
+  position: absolute;
+  margin-bottom: 12px;
+}
+
+.linkcv {
+  position: absolute;
+  margin-left: 120px;
+  margin-bottom: 15px;
 }
 
 /* About */
@@ -295,9 +302,20 @@ footer {
       margin-top: 25px;
   }
 
-  #hero .icons {
-    margin-bottom: 50px;
-    height: 5px;
+  .icons {
+    display: flex; /* Add this to center icons horizontally */
+    justify-content: center; /* Center icons horizontally */
+    position: absolute; /* Keep this to position at the bottom */
+    bottom: 0; /* Position at the bottom */
+    margin-left: 13px;
+  }
+
+  .linkcv {
+    font-size: 15px;
+    display: flex; /* Add this to center the link horizontally */
+    justify-content: center; /* Center the link horizontally */
+    position: absolute; /* Keep this to position at the bottom */
+    bottom: 0; /* Position at the bottom */
   }
 
   #hero h1 {
@@ -360,7 +378,7 @@ footer {
   }
 
   .logoskill img {
-    height: 10px;
+    height: 10px; 
   }
 
   .cards {
@@ -376,7 +394,7 @@ footer {
 
   .galeri-item {
     width: 100%;
-    float: none;
+    height: 100px;
     margin-bottom: 20px;
   }
   
@@ -385,6 +403,27 @@ footer {
     height: auto;
     object-fit: cover;
     border-radius: 10px;
+  }
+
+  /* Portfolio Cards */
+  .card {
+    width: 100%; /* Full width on mobile */
+    margin-bottom: 20px;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  /* Adjust Card Text */
+  .card-title {
+    font-size: 18px; /* Slightly smaller title */
+  }
+
+  .card-text {
+    font-size: 14px;
   }
 
   /* Carousel */
